@@ -1,19 +1,20 @@
-function prime(number)
-{   
-    let counter=0
-    for(let i=1;i<=number;i++)
+
+function prime(num)
+
+{   if(num<=1){
+    return false;
+}
+    let flag=true;
+    for(let i=2;i<num;i++)
     {
         if(num%i==0)
-        {  
-           counter++; 
-           
+        {
+           flag=false;
         }
     }
-    if(counter==2)
-    {
-        return true;
-    }
-    return false;
+    return flag;
+
+
 }
 
  let ans=prime(13);
