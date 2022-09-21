@@ -1,3 +1,4 @@
+
 function prime(num)
 
 {   if(num<=1){
@@ -12,6 +13,14 @@ function prime(num)
         }
     }
     return flag;
+
+
 }
 
-prime(13);
+ let ans=prime(13);
+
+ if(ans==true){
+    console.log("Prime");
+ }else{
+    console.log("Not Prime")
+ }
