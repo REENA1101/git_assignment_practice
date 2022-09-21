@@ -1,13 +1,17 @@
 function prime(num)
-{
-    for(let i=1;i<=num;i++)
+
+{   if(num<=1){
+    return false;
+}
+    let flag=true;
+    for(let i=2;i<num;i++)
     {
-        if(num%i)
+        if(num%i==0)
         {
-           return true;
+           flag=false;
         }
     }
-    return false;
+    return flag;
 }
 
 prime(13);
